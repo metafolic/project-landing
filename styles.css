@@ -30,6 +30,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  transition: all 0.3s ease;
 }
 .footer {
   justify-content: center;
@@ -43,10 +44,12 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
-.logo {
+
+.logo a {
   font-size: 24px;
   font-weight: 600;
   color: #f9faf8;
+  text-decoration: none;
 }
 nav {
   display: flex;
@@ -61,25 +64,26 @@ nav ul {
   align-items: center;
 }
 
-a {
+li > a {
   text-decoration: none;
   color: #ced1d6;
   font-size: 18px;
   margin-left: auto;
 }
 
-.content {
+.container {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 100px 140px;
-  background-color: #1f2937;
 }
 .hero {
   font-size: 18px;
   color: #f9faf8;
   display: flex;
   gap: 100px;
+  background-color: #1f2937;
+  width: 100%;
+  padding: 100px 140px;
 }
 
 .hero-img {
@@ -113,6 +117,106 @@ button {
   font-weight: 600;
 }
 
+.main {
+  font-size: 18px;
+  background-color: #f9faf8;
+  gap: 30px;
+  width: 100%;
+  padding: 100px 140px;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main2 {
+  font-size: 18px;
+  background-color: #1f2937;
+  gap: 30px;
+  width: 100%;
+  padding: 100px 140px;
+  color: #f9faf8;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main2 h2 {
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  color: #f9faf8;
+}
+
+.main2 a {
+  text-decoration: none;
+  color: #f9faf8;
+}
+
+.main2-img {
+  border: #f9faf8 solid 3px;
+  width: 180px;
+  height: auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.text-img {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Horizontally center both image and text */
+  text-align: center; /* Center the text inside the <p> */
+  gap: 10px;
+  max-width: 200px;
+  flex: 1;
+}
+
+.main h2 {
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+}
+
+.main a {
+  text-decoration: none;
+  color: #1f2937;
+}
+
+.main-img {
+  border: #3882f6 solid 3px;
+  width: 180px;
+  height: auto;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  gap: 30px;
+  width: 100%;
+  padding: 100px 140px;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-block {
+  font-size: 36px;
+  font-style: italic;
+  line-height: 1.25;
+  width: 80%;
+}
+
+.quote-author {
+  font-weight: 900;
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 24px;
+}
+.footer {
+  padding: 30px 0;
+}
 /*CSS Styles for devices - phones smaller than 600px*/
 @media (max-width: 768px) {
   /* adjustments go here */
