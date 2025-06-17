@@ -30,7 +30,6 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  transition: all 0.3s ease;
 }
 .footer {
   justify-content: center;
@@ -45,11 +44,26 @@ body {
   font-weight: 400;
 }
 
-.logo a {
+.logo {
   font-size: 24px;
   font-weight: 600;
-  color: #f9faf8;
+  width: 140px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Prevent logo from shrinking */
+  color: #f9faf8; /* Set color at container level too */
+}
+
+.logo a {
+  color: inherit; /* Inherit the color from parent */
   text-decoration: none;
+  width: 140px; /* Match parent width */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav {
   display: flex;
